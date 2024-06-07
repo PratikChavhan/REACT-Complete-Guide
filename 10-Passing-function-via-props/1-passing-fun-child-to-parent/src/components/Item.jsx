@@ -1,6 +1,6 @@
 import styles from "./Item.module.css";
 
-function Items({ food, handleBuyButton }) {
+function Item({ food, handleBuyButton }) {
   return (
     <li className={`${styles["kg-item"]} list-group-item `}>
       <span className={styles["kg-span"]}>{food}</span>
@@ -14,8 +14,6 @@ function Items({ food, handleBuyButton }) {
   );
 }
 
-export default Items;
+export default Item;
 
 // to observe css module implementation inspect the component and observe the classNames
-
-

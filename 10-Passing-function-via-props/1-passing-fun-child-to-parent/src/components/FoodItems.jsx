@@ -1,14 +1,14 @@
-import FoodItem from "./Item";
+import Item from "./Item";
 
 const FoodItems = ({ items }) => {
   return (
     <ul className="list-group">
       {items.map((item) => (
-        <FoodItem
+        <Item
           key={item}
           food={item}
           handleBuyButton={() => console.log(`${item} bought!!!`)}
-        ></FoodItem>
+        ></Item>
       ))}
     </ul>
   );
@@ -16,7 +16,7 @@ const FoodItems = ({ items }) => {
 
 export default FoodItems;
 
-// here we are passing two props to the <FoodItem></FoodItem>
+// here we are passing two props to the <Item></Item>
 // one is the item/food itself and other is the behaviour of the
 // Buy button, which is defined in the Item.jsx
 // This is done because, we are making Item.jsx independent from
